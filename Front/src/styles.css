@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.btn[type="submit"]{
+    background-color: aqua;
+}
+
+input.ng-touched.ng-invalid{
+
+    border-color: red;
+}
+
+.form-group>input{
+    font-weight: bolder;
+}
+
+div.validation-error{
+    color: red;
+}
+
+table tr:hover{
+    cursor: pointer;
+}
