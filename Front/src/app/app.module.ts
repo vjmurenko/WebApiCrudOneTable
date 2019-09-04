@@ -10,6 +10,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {ToastrModule} from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {TextMaskModule} from 'angular2-text-mask';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     FormsModule,
       HttpClientModule,
       ToastrModule.forRoot(),
-      BrowserAnimationsModule
+      BrowserAnimationsModule,
+      TextMaskModule
+
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

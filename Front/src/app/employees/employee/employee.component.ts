@@ -10,6 +10,8 @@ import { ToastrService} from 'ngx-toastr';
 })
 export class EmployeeComponent implements OnInit {
 
+  mask:any[] = ['+', '7',' ','(', /\d/,/\d/, /\d/, ')', ' ', /\d/,/\d/,/\d/,'-', /\d/,/\d/,/\d/,/\d/, ];
+
   constructor(private service: EmployeeService,
               private toastr: ToastrService) { }
 
@@ -29,7 +31,6 @@ export class EmployeeComponent implements OnInit {
       Position: ''
     };
   }
-
 
   onSubmit(form: NgForm){
     if(form.value.EmployeeID != null){

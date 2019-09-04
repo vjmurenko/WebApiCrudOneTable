@@ -14,7 +14,8 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <label>Mobile</label>
-            <input name="Mobile" class="form-control" [(ngModel)]="service.formData.Mobile" required>
+            <input name="Mobile" class="form-control" [(ngModel)]="service.formData.Mobile" required
+            placeholder="+7" [textMask]="{mask: mask}">
         </div>
 
         <div class="form-group col-md-6">
